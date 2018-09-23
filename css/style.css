@@ -126,9 +126,6 @@
 
 
 
-
-
-
 .buttton123{
 
   border:1px solid white; background-color: transparent;
@@ -186,6 +183,14 @@
 }
 
 
+.headlineFont{
+
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 32px;
+  margin-bottom: 50px;
+
+}
 
 
 /* STYLES FOR NAVBAR ANIMATION */
