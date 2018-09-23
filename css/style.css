@@ -6,6 +6,75 @@
  * Made By MaterializeCSS.com
  */
 
+
+ .cd-top {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  bottom: 40px;
+  right: 10px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  /* image replacement properties */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  background: rgba(232, 98, 86, 0.8) url(../Images/arrowUp.png) no-repeat center 50%;
+  background-color: transparent;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity .3s 0s, visibility 0s .3s, background-color .3s 0s;
+  transition: opacity .3s 0s, visibility 0s .3s, background-color .3s 0s;
+}
+
+.cd-top.cd-top--show,
+.cd-top.cd-top--fade-out,
+.cd-top:hover {
+  -webkit-transition: opacity .3s 0s, visibility 0s 0s, background-color .3s 0s;
+  transition: opacity .3s 0s, visibility 0s 0s, background-color .3s 0s;
+  background-color: transparent;
+}
+
+.cd-top.cd-top--show {
+  /* the button becomes visible */
+  visibility: visible;
+  opacity: 1;
+}
+
+.cd-top.cd-top--fade-out {
+  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+  opacity: .5;
+}
+
+.cd-top:hover {
+  background-color: transparent;
+  opacity: 1;
+}
+
+@media only screen and (min-width: 768px) {
+  .cd-top {
+    right: 20px;
+    bottom: 20px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .cd-top {
+    height: 60px;
+    width: 60px;
+    right: 30px;
+    bottom: 30px;
+  }
+}
+
+
+
+
+
+
+
+
  .lessBright {
   -webkit-filter: brightness(0.8);
   filter: brightness(0.8);
@@ -45,7 +114,15 @@
   border-width: medium;
 }
 
+.backgroundContact{
+  background-image:url(../Images/pasica1.png);
+}
 
+.boldFont {
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 14px;
+};
 
 
 
@@ -54,16 +131,26 @@
   border:1px solid white; background-color: transparent;
 }
 
+.customButton{
+  width: 50%;
+  height: 20%;
+  margin-top: 10%;
+  background-color: #2098D1;
+}
+
 .title-image{
 
   width: 70%;
   height: 70%;
   padding-top: 10%;
-  margin: auto;
+  maring:auto;  
+  margin-left: 200%;
 
 
 
 }
+
+
 
 
 @media screen and (max-width: 768px) {
@@ -270,4 +357,13 @@ footer.page-footer {
 @keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
+}
+
+
+
+
+
+.removeMP{
+
+  padding:0; margin:0;
 }
