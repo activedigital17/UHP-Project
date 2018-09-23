@@ -1,12 +1,7 @@
-/* /* /* Custom Stylesheet */
-/**
- * Use this file to override Materialize files so you can update
- * the core Materialize files in the future
- *
- * Made By MaterializeCSS.com
- */
+/* /* /* Custom Stylesheet overwriting SASS*/
 
 
+/*styles for TO THE TOP BUTTON  */
  .cd-top {
   display: inline-block;
   height: 40px;
@@ -75,6 +70,10 @@
 
 
 
+
+
+
+
  .lessBright {
   -webkit-filter: brightness(0.8);
   filter: brightness(0.8);
@@ -126,7 +125,11 @@
 
 
 
-.buttton{
+
+
+
+
+.buttton123{
 
   border:1px solid white; background-color: transparent;
 }
@@ -143,14 +146,17 @@
   width: 70%;
   height: 70%;
   padding-top: 10%;
-  maring:auto;  
+  margin:auto;  
   margin-left: 200%;
 
 
 
 }
 
+.buttton123{
 
+  border:1px solid white; background-color: transparent;
+}
 
 
 @media screen and (max-width: 768px) {
@@ -181,6 +187,8 @@
 
 
 
+
+/* STYLES FOR NAVBAR ANIMATION */
 
 /* Underline From Center */
 .hvr-underline-from-center {
@@ -213,57 +221,12 @@
   right: 0;
 }
 
-/*
-nav ul a,
-nav .brand-logo {
-  color: #444;
-}
 
-p {
-  line-height: 2rem;
-}
 
-.sidenav-trigger {
-  color: #26a69a;
-}
 
-.parallax-container {
-  min-height: 380px;
-  line-height: 0;
-  height: auto;
-  color: rgba(255,255,255,.9);
-}
-  .parallax-container .section {
-    width: 100%;
-  }
+/* CAROUSEL STYLES */
 
-@media only screen and (max-width : 992px) {
-  .parallax-container .section {
-    position: absolute;
-    top: 40%;
-  }
-  #index-banner .section {
-    top: 10%;
-  }
-}
 
-@media only screen and (max-width : 600px) {
-  #index-banner .section {
-    top: 0;
-  }
-}
-
-.icon-block {
-  padding: 0 15px;
-}
-.icon-block .material-icons {
-  font-size: inherit;
-}
-
-footer.page-footer {
-  margin: 0;
-}
-*/
 
 * {box-sizing:border-box}
 
@@ -363,7 +326,3 @@ footer.page-footer {
 
 
 
-.removeMP{
-
-  padding:0; margin:0;
-}
